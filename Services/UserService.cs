@@ -25,9 +25,9 @@ namespace SmartOffice.Issat.API.Services
 
         public async Task<UserDefinition?> GetUserByNameAsync(string name) =>
            await _usersCollection.Find(x => x.Name == name).FirstOrDefaultAsync();
-        public async Task<UserDefinition> GetUserAsync(UserDefinition user)
+        public async Task<UserDefinition> GetUserAsync(User user)
         =>
-            await _usersCollection.Find(x => x.Name == user.Name).FirstOrDefaultAsync();
+            await _usersCollection.Find(x => x.Name == user.Name && x.Password== user.Password).FirstOrDefaultAsync();
         
         
            

@@ -13,6 +13,7 @@ namespace SmartOffice.Issat.API.Models
         public string Name { get; set; }
         [JsonPropertyName("Password")]
         public String Password { get; set; }
+        [JsonPropertyName("Email")]
         public string Email { get; set; }
 
     }

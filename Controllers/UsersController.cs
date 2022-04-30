@@ -20,7 +20,7 @@ namespace SmartOffice.Issat.API.Controllers
 
 
         [HttpPost ("isExist")]
-        public async Task<bool> isExist( UserDefinition user) 
+        public async Task<bool> isExist( User user) 
        
         {
           
